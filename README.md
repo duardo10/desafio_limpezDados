@@ -26,13 +26,6 @@ Este documento descreve as transformações e junções realizadas na base de da
 - **Operação**: Mesclagem de tabelas
 - **Descrição**: As tabelas `employee` e `departament` foram mescladas com base na coluna `Dept No`. Isso permite associar os colaboradores aos seus respectivos departamentos e obter informações adicionais sobre os departamentos.
 
-### Instruções no Power BI
-
-1. Abra o Editor de Consultas no Power BI Desktop.
-2. Selecione a tabela `employee`.
-3. Clique em "Nova Consulta" > "Mesclar Consultas".
-4. Selecione a tabela `departament` e junte usando a coluna `Dept No`.
-5. Mantenha as colunas necessárias e remova as desnecessárias.
 
 ## 5. Criação da Coluna `Full Name`
 
@@ -40,10 +33,3 @@ Este documento descreve as transformações e junções realizadas na base de da
 - **Operação**: Mesclagem de colunas
 - **Descrição**: Foi criada uma nova coluna `Full Name` combinando `First Name` e `Last Name` para fornecer uma representação completa do nome dos colaboradores.
 
-### Instruções no Power BI
-
-1. No Editor de Consultas, selecione a tabela `employee`.
-2. Clique em "Adicionar Coluna" > "Coluna Personalizada".
-3. Insira a fórmula para combinar o nome e sobrenome:
-   ```powerquery
-   [First Name] & " " & [Last Name]
